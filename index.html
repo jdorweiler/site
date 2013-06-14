@@ -1,83 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Site by jdorweiler</title>
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Site</h1>
-        <h2></h2>
-        <a href="https://github.com/jdorweiler/site" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/jdorweiler/site/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
-          <a href="https://github.com/jdorweiler/site/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/jdorweiler/site"></a> is maintained by <a href="https://github.com/jdorweiler">jdorweiler</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
+    <div class="container">
+
+              <!-- row of columns -->
+   <div class="row">            
+   <div class="span3">
+          <a class= "brand" href="electronics.html"> <strong>Projects</strong> </a>
+                              <br>
+                     &nbsp;<a class= "brand" href="roomba.html#roomba">ROS with a Roomba</a>
+                     <br>
+                    
+                     &nbsp;<a class= "brand" href=UGVBoard.html#UGV>Unmanned Ground Vehicle board</a>
+                     <br>
+           &nbsp;<a class= "brand" href="car.html#car">Autonomous Car</a>
+           
+          <br>
+           &nbsp;<a class= "brand" href="electronics.html#robot">Balancing Robot </a>
+           <br>
+           &nbsp;<a class= "brand" href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a>
+           <ul class="thumbnails">
+  <li class="span3">
+    <a href="car.html#car" class="thumbnail">
+      <img src="car/lcd2.png" alt="">
+    </a>
+  </li>
+</ul>
+      </div>           
+              <div class="span3">
+          <a class= "brand" href="printing.html"> <strong>3D Printing</strong> </a>
+           <ul class="thumbnails">
+  <li class="span3">
+    <a href="printing.html" class="thumbnail">
+      <img src="owl.jpg" alt="">
+    </a>
+  </li>
+</ul>
+</div>
+        
+      
+        <div class="span3">
+          <a class= "brand" href="chemistry.html"> <strong>Chemistry</strong> </a>
+           <ul class="thumbnails">
+  <li class="span3">
+    <a href="chemistry.html" class="thumbnail">
+      <img src="chemistry/euamide.jpg" alt="">
+    </a>
+  </li>
+</ul>
+        </div>
+        
+      
+   
+      <div class="span3">
+          <a class= "brand" href="climbing.html"> <strong>Climbing</strong> </a>
+          <br>
+           &nbsp;<a class= "brand" href="climbing.html">Utah</a>
+           <br>
+           &nbsp;<a class= "brand" href="climbingNJ.html">New Jersey</a>
+           <ul class="thumbnails">
+  <li class="span3">
+    <a href="climbing.html" class="thumbnail">
+      <img src="climb.jpg" alt="">
+    </a>
+  </li>
+</ul>
+      </div>
+      </div>
+      <br>
+      <strong>Recent Posts</strong>
+      <br>
+      <br>                        <div class="row">
+      <div class="span2,offset2">
+          <a class= "brand" href=roomba.html#roomba>Running ROS with a Roomba</a>
+           <p><p>
+           <ul class="thumbnails">
+  <li class="span4">
+      <img src="roomba/roombadepth.png" " alt="">
+    </a>
+  </li>
+</ul>
   
+      </div>
+ 
+      <div class="span4">
+      <br>
+      <br>
+      I finally got a around to trying to use ROS with a iRobot Roomba.  I have examples of the Teleoperation, SLAM, and AMCL packages
+      running with it. </a> 
+</ul>
+      </div>
+      </div>
+      
+                        <div class="row">
+      <div class="span2,offset2">
+          <a class= "brand" href=UGVBoard.html#UGV>Released v1.1 of the UGV board (Unmanned Ground Vehicle)<br></a>
+           <p><p>
+           <ul class="thumbnails">
+  <li class="span4">
+      <img src="UGV/UGVBoard2.png" " alt="">
+    </a>
+  </li>
+</ul>
+  
+      </div>
+ 
+      <div class="span4">
+      <br>
+      <br>
+      The UGV board is my attempt to put together all the things I found useful in building my autonomous car and a few
+ new features that I thought would be good to have. The goal was to build a board that 
+ will work well with my autonomous car setup but also have the ability to adapt for use in other autonomous robotics
+ projects.  I've also started work on a ground station to wirelessly gather data on the car as it's running. </a> 
+</ul>
+      </div>
+      </div>
+                  <div class="row">
+      <div class="span2,offset2">
+          <a class= "brand" href=car.html#car3>Lots of new work on the autonomous car<br></a>
+           <p><p>
+           <ul class="thumbnails">
+  <li class="span4">
+      <img src="car/car3.png" " alt="">
+    </a>
+  </li>
+</ul>
+  
+      </div>
+ 
+      <div class="span4">
+      <br>
+      <br>
+     I changed the microcontroller over to a Chipkit Max32, added microSD data logging, and an LCD.  The car makes its first successful autonomous run!</a> 
+</ul>
+      </div>
+      </div>
+            <div class="row">
+      <div class="span2,offset2">
+          <a class= "brand" href=http://hackaday.com/2012/06/25/printing-and-programming-a-self-balancer/> My Balancing Robot Makes HackaDay! <br> </a>
+           <p><p>
+           <ul class="thumbnails">
+  <li class="span4">
+    <a href="http://hackaday.com/2012/06/25/printing-and-programming-a-self-balancer/" class="thumbnail">
+      <img src="hackaday.png" alt="">
+    </a>
+  </li>
+</ul>
+  
+      </div>
+ 
+      <div class="span4">
+      <br>
+      <br>
+     My balancing robot made it on <a href="http://hackaday.com/2012/06/25/printing-and-programming-a-self-balancer/">Hackaday</a> and got featured on <a href="http://www.thingiverse.com/thing:25531">Thingiverse! 
+</ul>
+      </div>
+      </div>
+
+
+</div>
+</div>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jason Dorweiler 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
   </body>
 </html>
