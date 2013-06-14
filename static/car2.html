@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+              </br>
+              <li class="nav-header"><a href="Blog.html">Blog</a></li>
+
+            
+             
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <div class="span9 span-fixed-sidebar">
+          <div class="hero-unit">
+            
+          <div class="row-fluid">
+          
+          <a name="car"></a>
+          </br>
+          </br>
+          
+          <h2>Autonomous Car pt. 1</h2>
+          <p>July 1, 2012</p>
+          This post will detail my plans and progress for an autonomous car.  Using what I've learned 
+          from building the <a href="electronics.html#robot">balancing robot</a> and to put to good
+          use everything I've learned from the courses though <a href="http://www.udacity.com" target="_blank">Udacity</a> and <a href="http://mitx.mit.edu/" target="_blank">MITx</a>.
+          The goal is to take a small 1/10 remote controlled car and have it navigate a course on its own.   
+          To navigate the course I’m planning on using an Android phone, GPS, and a accelerometer/gyroscope.  I'll be recording a 
+          video stream through the phone and processing it on my laptop using Python and the computer vision library <a href="http://opencv.willowgarage.com/wiki/" target="_blank">OpenCV</a>.  
+<br>
+<br>
+<strong> The Car </strong>
+<br>
+I choose a 1/10 scale car to be large enough to hold all of the electronics.  
+I was a bit worried that the cheaper and more common 1/16 scale cars would be too small.  I picked this car up on Amazon for about $100.  Here's some pictures of it below.  I've already started working on the electronics for it.  
+<br>
+<br>
+<div class="row">
+<div class="span1">
+        </div>
+           <div class="span5">
+<img src="car/car1.png">
+</div>
+
+           <div class="span5">
+<img src="car/car2.png">
+</div>
+</div>
+<br>
+<br>
+<strong>The Code</strong>
+<br>
+Below is a block diagram I drew that shows my preliminary design for the software portion of the car. 
+<br>
+<br>
+<div class="row">
+<div class="span1">
+        </div>
+           <div class="span8">
+<img src="car/code.png">
+</div>
+</div>
+<br>
+<br>
+For the localization of the car I’ll be using a GPS sensor and accelerometer.  First the GPS will find the starting coordinates of the car.  From there the car will have to start moving somewhat blindly at first.  Once the car is moving, data from the accelerometer and elapsed time can be used to calculate the velocity of the car.  These two measurements are then passed into a Kalman filter to improve the accuracy of the cars position. 
+<br>
+<br>
+At the same time heading data from the GPS and gyroscope are passed into another Kalman filter to get an accurate heading on the car.  The position and heading data from the Kalman filters is then compared to a GPS waypoint given to the sensor and motor control.  From here a heading toward the desired GPS waypoint is calculated and the appropriate signal sent to the steering servo to point the car in that direction. 
+<br>
+<br>
+While all of that is going on the camera from the Android phone mounted on the car will be streaming images of the road ahead back to my computer.  On the computer I’ll be using Python and OpenCV to process the images.  The images will be processed looking for the edges of the road (width) and also looking for obstacles in from of the car.  Data from the OpenCV program will be sent back to the motor control allowing the car to deviate from its previously calculated heading to avoid objects that may get in the way.   
+<br>
+<br>
+Below is the preliminary work I’ve done on the image processing.  I’m using an app called Barnacle to set up a local network between my phone and laptop.  Then sending the camera feed over HTTP.  From here I’m using Python to grab a snapshot of the camera feed.  I’ll walk through the steps of the image processing below.  I’ll leave the discussion of the theory and mathematics behind these processing algorithms for another time and just stick with the results for now. 
+<br>
+<br>
+Here’s the original image on the left.  The first step is to convert it to grayscale, shown on the right. 
+<br>
+<br>
+<div class="row">
+<div class="span1">
+        </div>
+           <div class="span5">
+<img src="car/road.png">
+</div>
+
+           <div class="span5">
+<img src="car/road2.png">
+</div>
+</div>
+<br>
+<br>
+From the gray image I run a <a href="http://en.wikipedia.org/wiki/Gaussian_blur" target="_blank">Gaussian filter</a> to reduce the noise and avoid finding false lines later on in the processing  (not shown).  Then the result of the Gaussian filter is passed into a <a href="http://en.wikipedia.org/wiki/Canny_edge_detector" target="_blank">Canny edge detector</a> to locate the edges.  
+<br>
+<br>
+<div class="row">
+<div class="span2">
+        </div>
+           <div class="span5">
+<img src="car/road3.png">
+</div>
+</div>
+<br>
+<br>
+From the Canny image you can already see the outline of the road. But if you look closely at the Canny image you’ll notice that those aren’t quite continuous lines.  There are spots where the line breaks which will make doing any useful mathematics on it later more difficult.  To fix this and clean up the image further I’m then applying a <a href="http://en.wikipedia.org/wiki/Hough_transform" target="_blank">Hough transform</a> to the Canny output.  This transform is fairly complicated but the quick summary is that it looks for sections in the image that aren’t continuous but that form part of a larger line.  For this part I’m also giving it a theta angle to restrict which lines it returns.  
+<br>
+<br>
+<div class="row">
+<div class="span2">
+        </div>
+           <div class="span5">
+<img src="car/road4.png">
+</div>
+</div>
+<br>
+<br>
+That’s it for now.  From here I can make sure that the car stays in the middle of the road. 
+<br>
+ Next plans are to add <a href="http://en.wikipedia.org/wiki/Blob_detection" target="_blank">obstacle detection</a>. 
+ <br>
+ <br>
+ <br>
+ <br>
+        <h2>Autonomous Car pt. 2</h2>
+          <p>July 14, 2012</p>
+          
+        <br>
+        
+        After a lot of work with the Python OpenCV library and testing the image processing on the car outside I've decided
+        that I'll leave the computer vision part of this project for later.  The simple line detection works well for images
+        like the ones in my previous post.  But on more complicated images, such as ones without yellow lane markers, line 
+        detection just wont cut it.  I'm currently looking into using a neural network with OpenCV to keep the car on
+        a road.  
+        <br>
+        <br>
+        Right now I'm trying to get the steering working.  The goal being that the car should steer into the direction of
+        the next waypoint from it's current location. I also got a lot of new stuff for the car.  Here's how it looks
+        today.  I upgraded to an Arduino mega (see below for why), Xbee for sending data wirelessly to my laptop, and a GPS
+        module.  
+        <br>
+        <br>
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span7">
+        <img src="car/carelectronics1.png">
+        </div>
+        </div>
+        <br>
+        <br>
+        I spent a lot of time trying to get the steering working with the Arduino Uno.  The problem is that the Uno only 
+        has one serial port.  I was using this serial port for the Xbee communication.  The GPS also needs a serial port
+        so I was running that using the software serial library.  The trouble is that software serial works on interupts
+        and the steering and esc need to have a constant signal.  
+        <br>
+        <br>
+        What would happen is that briefly when the interupt for the GPS would come on the signal for the servos would stop.  
+        This caused some serious erratic behavior and resulted in the car jumping off of my workbench several times.  The 
+        Arduino Mega (borrowed from my 3D printer) gets around this problem by having 4 serial ports.  This is more than enough for this project. 
+        <br>
+        <br>
+        So for now I'm trying to get all the code and computations done on the Arduino.  I'll leave the computer vision
+        and machine learning stuff for later on.  I'm also thinking about replacing the Mega with a much faster <a href="http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-MAX32" target="_blank">ChipKit Max32</a>
+        which uses a 80MHz PIC32 microcontroller.  The Mega is working well now but I'm worried that the 2D Kalman filter I plan on using for the localization will slow it 
+        down too much. 
+        <br>
+        <br>
+        For the Arduino code:  
+        <br>
+        Right now I have the GPS data parsed.  I also added a LED indicator on the board that 
+        is on whenever there is a valid GPS data stream.  This was nice for when I'm not by the laptop to see if it has valid 
+        data.  The GPS heading data and the gyro rate data are sent to a Kalman filter.  The GPS heading is very slow.  Visually it 
+        seems to lag by 1-2 seconds.  The car can reach up to 20mph so the car could move nearly 60ft before getting a new heading update.
+        To fix this I'm using the gyro rate in between those updates to correct the car's heading.  So far this 
+        is working but the updated heading is still a bit laggy.  I need to do some tuning on the Kalman filter to fix this.  The 
+        car will turn toward the waypoint but it ends up just going in circles because the angle isn't updated fast enough.  
+        <br>
+        <br>
+        The updated angle is also sent to a PID control which, until I get the Kalman filter tuned, I've set the
+        integral and derivative portions to zero.  This will also need a lot of tuning later on.  
+        Here's the loop portion of the code below.  I'll upload the rest on github later.  
+        <br>
+        <br>
+        <iframe src="http://pastebin.com/embed_iframe.php?i=Qq3XjjLd" style="border:none;width:100%"></iframe>
+        <br>
+        <br>
+      I also decided that I needed a way to regain control of the car if things started to go bad.  There's a built in 
+        Arduino library called PulseIn which can be used to measure a pulse position modulation (PPM) signal that is put out 
+        by the radio receiver.  The library can be a bit of a pain to work with.  It stops the loop while measuring the time
+        of the pulses and may completely stop the loop if it never seen the end of a pulse.  This sounds like trouble so I decided
+        to keep it off of the main control board all together.  
+        <br>
+        <br>
+        I have several smaller ATtiny85 microcontrollers that would be perfect for this job.  I wrote a quick program to read in 
+        the PPM signal from the receiver.  I give the signal a bit of a range to avoid any false positives.  Any signal that is outside
+        of 1300-1700ms (the typical signal is around 1500ms) sends one of the pins on the ATtiny high.  If the transmitter is on and 
+        in range then the ATtiny should see 1500ms.  If it goes out of range then this will drop to zero.  If I pull the trigger 
+        on the transmitter it will also cause the value to go out of it's set range.   
+        <br>
+        <br>
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span6">
+        <img src="car/killswitch.png">
+        </div>
+        </div>
+        <br>
+        <br>
+       
+        Then back in the main loop on the Mega I added a part to read in the voltage coming from the pin on the ATtiny.
+        A voltage higher than 1.0V means that the car is out of range or that I triggered the stop button on the transmitter.
+
+        <br>
+        <br>
+        <iframe src="http://pastebin.com/embed_iframe.php?i=ambKsrE4" style="border:none;width:100%"></iframe>
+    <br>    
+    <br>
+    <a name="car3"></a>
+    <br><br>
+    <h2>Autonomous Car pt. 3</h2>
+    <p>August 15th, 2012</p>  
+        <br>
+       It's been a while since my last update on the autonomous car project.  Lots of things have been changed or redone.  The biggest upgrade I did was 
+       replacing the Arduino mega with a Chipkit max32 which I had talked about in my last post.  The increased speed of the Chipkit board
+       has helped a lot.  The first thing I noticed was that the loop time decreased from about 50ms on the Arduino to around 20ms with the Chipkit.  This means that 
+the gyro scope data can be updated much faster and has helped produce a more accurate heading.
+       I've highlighted most of the car's new features in the image below. 
+        <br>
+        <br>
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span10">
+        <img src="car/car3.png">
+        </div>
+        </div>
+        <br>
+        <br>
+        One of the added bonuses of using the Chipkit is that it has a 3.3V logic level.  This works out well since all the sensors are also 3.3V
+        and I could easily add a SD card for data logging without having to buy a level converter or filling up my breadboard with tons of voltage dividers.  I’m using a microSD card adaptor with a header soldered on it and a 512mb microSD card to the data logging. 
+        Keeping track of all the car’s data has been a huge help.  I easily caught several bugs already that I would have otherwise had to spend days trying to figure out.
+        <br>
+        <br>
+        The LCD was also a very helpful addition.  It was one thing to have the data saved on the SD card but being able to see the data right on the screen while 
+        the car was trying to drive it’s self into a river is very useful.  Right now I've got it displaying the Kalman heading (from the GPS/Gyro), the GPS heading, the heading difference, 
+        and the distance to the next waypoint.  That's about all that will fit on the small screen.  
+<br>
+<br>
+<div class="row">
+<div class="span1">
+        </div>
+           <div class="span5">
+<img src="car/lcd.png">
+</div>
+
+           <div class="span5">
+<img src="car/lcd2.png">
+</div>
+</div>
+<br>
+<br>
+        With all of that and a lot of work on the code the car is doing really well.  I still need to get a video of it but for the run I did today the car drove down 
+        the street meeting 3 waypoints then returned to the starting point.  The only intervention it needed was a quick save from driving into a deep puddle (no puddle detection yet).
+        The image below shows the car's gps coordinates plotted on a map.  The blue line is the calculated path between waypoints and the red line is the actual path
+        the car took.  Notice that it gets a little messy where the car turns around.  That's where the car nearly drive it's self into a puddle.
+        <br>
+        <br>
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span10">
+        <img src="car/gps.jpg">
+        </div>
+        </div>
+        <br>
+        <br>
+        The code is still far from ideal so I’m working on a few new changes right now.  The GPS signal seems to be a bit noisy at times.  Looking back on the heading data that I’ve collected during a run I can see that the car is properly correcting it’s heading to be on track to meet the waypoint.  The problem is that a new GPS update will throw the heading off.  Sometimes this has been as large as 15-20 degrees which cause the car to think that it’s way off course.  
+<br>
+<br>
+I thought the Kalman filter should take care of this but it doesn’t seem to.  It may be a bug in my Kalman code or perhaps I need to smooth out the heading data first.  I’m looking into both options right now.  For the smoothing of the heading data I’m working on some code that will store several heading updates in a first-in-first-out array.  That should smooth out any big changes in GPS heading. 
+<br>
+<br>
+I’m also working on adding <a href="http://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">dead reckoning</a> to the code.  With this the car will calculate it’s current heading off of only the gyroscope in-between GPS updates.  This would also make it easy to add in a function that tells the car to only use the gyro if the GPS signal drops out or it the quality of drops too much. 
+        
+
+        
+
+          
+      
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jason Dorweiler 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+

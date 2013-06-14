@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position: fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+@media (max-width: 867px) {
+   .sidebar-nav-fixed {
+        position: static;
+        width: 100%;
+       }
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="roomba.html#roomba">ROS with a Roomba</a></li>
+                <li><a href="UGVBoard.html#UGV">UGV Board</a></li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <a name= "roomba"></a>
+        <div class="row-fluid">
+        <div class="span9 span-auto-sidebar">
+          <div class="hero-unit">
+          <br>
+          
+          </br>
+          </br>
+   
+          <h2>Running ROS with a Roomba</h2>
+          <p></p>
+ 
+    I came across an unused iRobot Roomba at <a href="http://www.fubarlabs.org">FUBAR labs</a> and though this would be 
+the perfect opportunity to build a robot using the Robotic Operating System 
+<a href="http://www.wikipedia.org/wiki/ROS_%28Robot_Operating_System%29">(ROS)</a>.  ROS is basically software that's used integrate
+all a robot's sensors (encoders, depth camera, laser scanner ect..) with the code that's used to control it.  All of the sensors run as a node.  For example, the Kinect
+sensor node publishes its depth data.  The SLAM (localization and mapping) node will uses the Kinect data to determine the 
+robot's location and publish to other nodes.  Each node is separate from the others so it's easy to change or add new ones.
+ROS also has a ton of built in <a href="http://www.ros.org/wiki/Sensors">libraries</a> that work with different servos, laser scanners, and other sensors.  
+
+<br>
+
+The Roomba is essentially the same thing as the iRobot Create, which is the base used for the 
+<a href="http://www.willowgarage.com/turtlebot">Turtlebot</a> designed by Willow Garage (another ROS robot).  In the picture below, I've got the Roomba on the bottom, the laptop
+that will be running ROS, and a Kinect sensor on top.  Not pictured is the workstation, which is just another computer running ROS and used to render the localization data. 
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+        <a href="http://jddorweiler.appspot.com/roomba/roomba.jpg" target="_blank">
+        <img src="roomba/roomba.jpg">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+
+After a bit of searching, I found 
+out that someone had already created a ROS stack for the Roomba.  Unfortunately, I ran into a lot of trouble getting it to work
+and later found out that the Roomba stack is a bit buggy.  The good thing about the similarity between the Turtlebot and Roomba is
+that you can use the Turtlebot stack with just a few small changes.  From this post on <a href="http://answers.ros.org/question/47094/turtlebot-roomba-dashboard/?answer=47096#post-id-47096">ROS answers</a> I learned that a few changes to the Turtlebot launch file were
+needed.  The code below is what I've got working on my Roomba right now.
+<br>
+<br>
+
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span10">
+        <script src="http://pastebin.com/embed_js.php?i=eLqFvK6d"></script>
+        </div>
+        </div>
+
+
+<br>
+<br>
+<h2>Teleoperation and Mapping</h2>
+<br>
+Here are some examples of the Roomba working with the teleoperation and SLAM packages at <a href="http://www.fubarlabs.org">FUBAR labs</a>.  In the first video, I'm driving the Roomba
+around with the keyboard on the workstation using the teleop package.  The Roomba is running the SLAM package, mapping, and sending its data back to the workstation for visualization.  The
+white circle on the map is the Roomba and white lines moving around in front of the robot are where it thinks it's seeing an object based on the Kinect data.
+There was a bit of trouble with the communication between
+the two that caused the robot's localization to jump around.  I think this was the result of my workstation trying to run ROS, 
+display the visualization data, and record a screen video.  This slowed the computer down almost to the point where it was unusable. I did manage to get some video though. 
+<br>
+<br>
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span9">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/XTUC-DoW4uQ" frameborder="0" allowfullscreen></iframe>
+        </a>
+        </div>
+        </div>
+<br>
+<br> 
+In the video below, I thought it would be nice to show the depth image from the Kinect along with the map.  This caused
+the workstation to lag quite a bit as you can see in the video.  Still it shows some nice images of the Kinect. 
+<br>
+<br>
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span9">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ynAjzHpw1XU" frameborder="0" allowfullscreen></iframe>
+        </a>
+        </div>
+        </div>
+<br>
+<br>
+I made a better map later on of my apartment.  No video for that one but here is an image of the map.  It's still a little
+messy, but I was able to use this map to have the Roomba autonomously navigate around my apartment.
+This was using the Adaptive Monte Carlo Localization <a href="http://www.fubarlabs.org">(AMCL)</a>
+package which uses a particle filter to localize the robot.  
+        <div class="row">
+        <div class="span1">
+        </div>
+        <div class="span9">
+        <a href="http://jddorweiler.appspot.com/roomba/SLAMmap.png" target="_blank">
+        <img src="roomba/SLAMmap.png">
+        </a>
+        </div>
+        </div>
+
+
+
+
+
+
+
+      
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jason Dorweiler 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+

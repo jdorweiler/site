@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="UGVBoard.html#UGV">UGV Board</a></li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+
+
+            
+             
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <div class="span9 span-fixed-sidebar">
+          <div class="hero-unit">
+            
+          <div class="row-fluid">
+          
+          <a name="cfbike"></a>
+          </br>
+          </br>
+          
+          <h2>Carbon Fiber Bike Parts</h2>
+          Still a work in progress. I began reading about carbon fiber design and layup briefly and realized that carbon fiber design can done at home with a minimal amount of equipment. I decided to try a small part first so get the hang of it. I wanted to mold a part from my mountain bike with the idea that at some point, I would replace the whole frame with carbon fiber parts. 
+ Luckily my bike has a removable seat stay. That&#8217;s the part of the frame that connects from the rear wheel to just below the seat. The removable seat stay design allowed for removal and easy copying of the design. However, the seat stay is also a critical structural component of the frame. 
+ On to making the mold.. 
+ This is by far the most critical and time-consuming portion of the project. There are two options: make a mold of the outside of the part, or make a foam copy of the part. I decided on the the foam option because it is much cheaper. I used regular pink insulation foam from a hardware store. For $25, I bought more foam that I will ever use. 
+ I traced the seat stay on the foam and then encountered a problem- the foam is actually pretty difficult to cut. I learned that a hot wire is a common way to cut dense foam. Still trying to keep the project as cheap as possible, I set out to make my own hot wire cutter. 
+ Here&#8217;s the seat stay on my homemade hot wire cutter.
+ <br>
+ <br>
+<img src="bike/cutter.png">
+ <br>
+ <br>
+ I made it out of an old desk, some scrap wood, an old guitar string, and a battery charger. The guitar string is stretched between the two wooden poles and the battery charger is hooked up to either end. The charger puts out 12 amps, which is more than enough to get the string glowing red hot. The B string was best for this. The E string burnt up almost instantly. I don&#8217;t have a picture, but version 2.0 has the excess string wrapped in a coil under the desk to act as a variable resistor to control the temperature of the wire. 
+ Here&#8217;s the nearly finished foam core on my bike. 
+ <br>
+ <br>
+ <img src="bike/foam.png"> 
+ <br>
+ <br>
+ After a few small alterations and some sanding, the foam core was ready to be wrapped in carbon fiber. Unfortunately, I don&#8217;t have any picture of the actual layup. As I learned, making carbon fiber parts is very messy (stray fibers everywhere and epoxy mess) so I didn&#8217;t have a chance to get the camera out. 
+ I cut up strips of carbon fiber about 1 inch wide and started wrapping the strips around the foam core. Then I applied a 1:2 epoxy:catalyst mixture to the outside. This process was repeated 9 times to produce a verystrong part. Remember I don&#8217;t want this crucial part to break while I&#8217;m riding! 
+ This picture was taken about about halfway through the process. I let the first two layers cure overnight before finishing the rest.
+ <br>
+ <br> 
+  <img src="bike/cfpart1.png">
+ <br>
+ <br>
+ And several layers later. The final part! It&#8217;s not pretty, but it&#8217;s functional, and so far I have about 200 miles of rough trail riding on it.
+ <br>
+ <br> 
+  <img src="bike/cfpart2.png">
+ <br>
+ <br>
+ <img src="bike/cfpart3.png">
+ <br>
+ <br>
+ I&#8217;ve also started working on a copy of the shock linkage (the black bar that connects to the top of the seat stay).  It&#8217;s still a work in progress.  
+ I made the shock link a bit differently.  Instead of using a foam core I made a mold from the original part.  For the mold I used a heavy flexible molding rubber.  The flexibility of the rubber allows it to be easily removed during the de-molding process.  A more rigid mold may get stuck and can&#8217;t be removed with out ruining it.  I found that out when I tried to use polyester for the first attempt.   
+ One downside of the flexibility of the rubber mold is that it wont hold its&#8217; shape in the lamination process.  To solve this problem I made a fiberglass backing to make it more rigid.  Kind of a mold of a mold.   
+ Here&#8217;s the rubber mold and it&#8217;s fiberglass backing.
+ <br>
+ <br>
+<img src="bike/cfpart4.png"> 
+ <br>
+ <br>
+ The lamination using a mold is a bit different that what I did before.  This time I laid all of the layers down into the mold with epoxy.  I then sealed a special bag around the whole thing and applied a strong vacuum to it.  This sucks epoxy through all the fibers and removes any excess, making the final part lighter and stronger.  
+ This is what it looked like in the vacuum bag.  
+ <br>
+ <br>
+ <img src="bike/cfpart5.png">
+<br>
+<br>
+ All that&#8217;s left to do now is drill out the holes for the bearings.  Then sand and apply an outer coat of epoxy to make it look nice.  
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+         &copy; Jason Dorweiler 2012 
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

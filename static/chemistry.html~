@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="UGVBoard.html#UGV">UGV Board</a></li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+
+
+            
+             
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <div class="span9 span-fixed-sidebar">
+          <div class="hero-unit">
+            
+          <div class="row-fluid">
+          
+          <a name="Lanthanide"></a>
+          </br>
+          </br>
+          
+          <h2>Lanthanide Chemistry</h2>
+          In graduate school, the main project I worked on was the synthesis of the lanthanide coordinating molecule (ligand) shown below. The planned goal of this project was to try and coordinate two lanthanide atoms (dinuclear) into one ligand and then explore the electronic properties of the resulting complex.
+<br>
+<a href="https://jasondorweiler.files.wordpress.com/2012/03/amide-synthesis.jpg"><img class="alignnone size-medium wp-image-86" title="amide synthesis" src="https://jasondorweiler.files.wordpress.com/2012/03/amide-synthesis.jpg?w=600&h=336" alt="" width="600" height="336" /></a>
+</br>
+Things didn&#8217;t go quite as planned and instead of crystallizing a two lanthanide complex, I was only able to get a single lanthanide complex. The crystal structure I got of the europium complex below shows that there is only one ligand wrapped around one europium atom. 
+</br>
+<a href="https://jasondorweiler.files.wordpress.com/2012/03/euamide1.jpg"><img class="alignnone size-medium wp-image-88" title="euamide" src="https://jasondorweiler.files.wordpress.com/2012/03/euamide1.jpg?w=453&h=304" alt="" width="453" height="304" /></a>
+
+</br> Bad news! I wasn&#8217;t ready to throw the whole project out yet though. I thought that there might be a chance that the dinuclear complex had formed in solution, but that the mononuclear complex more stable and more likely to crystallize out. I set out to figure out a way to see the solution state structure of the complex. NMR was of course the first place I looked. I did do a bit of solution state luminescence, but the lack of any UV active groups on the ligand made it difficult to prove that I was exciting the complex (and not just free ions in solution). The NMR spectra was much more interesting and useful. The three spectra below are of the ytterbium, samarium, and europium complexes.
+<br> 
+
+<a href="https://jasondorweiler.files.wordpress.com/2012/03/nmr.jpg"><img class="alignnone size-medium wp-image-90" title="nmr" src="https://jasondorweiler.files.wordpress.com/2012/03/nmr.jpg?w=436&h=450" alt="" width="436" height="450" /></a>
+
+</br>The lanthanide ion in the complex is paramagnetic, meaning it has its own magnetic field. This can really mess with the NMR, and in some cases, make it impossible to get a usable spectrum. This magnetic field is also shields and de-shields the protons in the complex, causing the very different spectra widths. It also disturbs the coupling between the protons, wiping out nearly all of the peak splitting that would normally be seen.
+At this point, NMR had not been all that helpful. I hadbroad peaks and pretty much no coupling to even begin to determine a structure. One day through  <del>luck accident</del> genius, a bit of D<sub>2</sub>O made it into one of my NMR samples. The NMR spectrum of this sample was missing two peaks. This was odd. Amide protons are exchangeable, and so I would expect them to be quenched, but I had four in this molecule. Most likely I would expect to see one or even four peaks quenched, but not two. Something weird was going on that I couldn&#8217;t yet explain.
+<br>
+<a href="https://jasondorweiler.files.wordpress.com/2012/03/nmr-quench1.jpg"><img class="alignnone size-full wp-image-92" title="nmr quench" src="https://jasondorweiler.files.wordpress.com/2012/03/nmr-quench1.jpg?w=874" alt=""   /></a>
+</br>
+</br>
+Back to the X-ray structure. I did a lot of thinking and reviewed all the characterization data that I had gathered at this point. Then it finally hit me while looking at the crystal structure- It had a C2 axis! This meant that the crystal form of the molecule was symmetric by a 180 degree rotation, making one half of the molecule identical to the other half. This realization explained the two exchangeable protons in my NMR spectrum.
+While reading more about paramagnetic NMR, I found out about a new type of MRI contrast reagents called paramagnetic chemical exchange saturation transfer reagents (PARACEST). These agents work by exciting an exchangeable proton on the PARACEST molecule and then transferring this saturated proton to the bulk water inside of tissue or blood. This is a really neat process in that the exchange can be easily changed by things like pH and the structure of the molecule.
+I wanted to explore the  potential of using the complex I had made as a PARACEST reagent. We didn&#8217;t have access to an MRI to test this idea, but using NMR was the next best thing. The spectra below shows my results. <br>
+ <a href="https://jasondorweiler.files.wordpress.com/2012/03/paracest.jpg"><img class="alignnone size-full wp-image-93" title="paracest" src="https://jasondorweiler.files.wordpress.com/2012/03/paracest.jpg?w=874" alt=""   /></a>
+</br>
+</br>The PARACEST spectrum is made by saturating one frequency at a time and then measuring the effect on the intensity of the water peak in the spectrum. The peaks are plotted pointing down to show the decrease in intensity. The big peak in the middle depicts direct saturation of the water frequency, so a 100% decrease. The two peaks on either side of that correspond exactly to where the exchangeable protons in my complex were found.
+I never found any proof that there was a dinuclear complex in solution. My guess is that such a complex would be too unstable, and that, as I saw, the mononuclear complex would quickly form instead.
+</br>
+</br>
+The full paper explaining this project in much more detail can be found here:<br />
+<a href="http://pubs.acs.org/doi/abs/10.1021/ic901191a" target="_blank">http://pubs.acs.org/doi/abs/10.1021/ic901191a</a>
+ </br>
+ </br>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jason Dorweiler 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

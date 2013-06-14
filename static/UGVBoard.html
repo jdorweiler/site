@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position:static;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+@media (max-width: 767px) {
+   .sidebar-nav-fixed {
+        position: static;
+        width: 100%;
+       }
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="roomba.html#roomba">ROS with a Roomba</a></li>
+                <li><a href="UGVBoard.html#UGV">UGV Board</a></li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <a name= "roomba"></a>
+        <div class="row-fluid">
+        <div class="span9 span-auto-sidebar">
+          <div class="hero-unit">
+          
+          <a name="UGV"></a>
+          </br>
+          </br>
+          
+          <h2>UGV Board v1.1</h2>
+          <p>Unmanned Ground Vehicle board for the ChipKit Max32</p>
+ The UGV board is my attempt to put together all the things I found useful in building my <a href="car.html#car">autonomous car</a> and a few
+ new features that I thought would be good to have.  As always you can find the latest source files for all my work 
+ on my <a href="https://github.com/jdorweiler" target="_blank">Github page</a>.  The goal was to build a board that 
+ will work well with my autonomous car setup but also have the ability to adapt for use in other autonomous robotics
+ projects.   
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span7">
+        <img src="UGV/eaglebrd.png">
+        </div>
+        </div>
+
+
+<br>
+<br>    
+At the time of writing this the UGV v1.1 has the following features. 
+<br>
+- Onboard gyroscope
+<br>
+- MicroSD card
+<br>
+- Breakout for a GPS antenna 
+<br>
+- Breakout of an external LCD attached with the same ribbon connector used in the autonomous car
+<br>
+- Xbee radio
+<br>
+- Two breakouts designed for encoders with built-in hysteresis using 555 timers and LEDs to show each encoder tick
+<br>
+- Breakout for four analog sensor pins.  Powered off the +5V rail. 
+<br>
+- Breakout for six servo/esc pins powered off an externally supplied voltage (determined by the user) and a large low ESR capacitor
+  to prevent large voltage drops 
+<br>
+<br>
+
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span7">
+        <a href="http://jddorweiler.appspot.com/UGV/UGVBoard.png" target="_blank">
+        <img src="UGV/UGVBoard.png">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+The un-assembled board.  These were made using the <a href="http://www.oshpark.com" target="_blank">OSH Park</a> board
+printing service and turned out looking great.  Below is the board after assembly.  I went with 0402 (0.4 mm × 0.2 mm)
+for many of the SMT components which I found out is really pushing the limit of soldering without a microscope. 
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span7">
+        <a href="http://jddorweiler.appspot.com/UGV/UGVBoard2.png" target="_blank">
+        <img src="UGV/UGVBoard2.png">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br> 
+The good part is that everything works! (after a few small modifications...)  I forgot to connect the CS and SDO pins on 
+the gyroscope to the input voltage.  The CS pin needs to be pulled high to select the I<sup>2</sup>C interface and the SDO pin needs to be pulled high
+to select the chips address, 105 in this case.  I ended up having to hand solder a single copper strand from these pins to one of 
+the nearby +3.3V vias to pull them up.  You can see it sticking out from under the Xbee in the picture above.  And for some reason the
+SD card holder's ground pins didn't get connected to the ground fill.  Not sure how that happened but it was a pretty easy fix.  I made a 
+short video (below) showing the board working.  The blue LEDs show each encoder tick.  Toward the end of the video the LCD is showing the 
+car's heading (corrected by the gyroscope) and interrupt counts from the wheel encoders. 
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span7">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/MIwUdI9IMPc" frameborder="0" allowfullscreen></iframe>
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br> 
+<h2>Autonomous Car GUI</h2>  
+<br>
+<br>
+I've had a bit of free time while I waited for the boards to be printed.  I decided to take that time to finally
+work on a GUI ground station to control the car from a laptop.  I'd been a bit apprehensive to start on this portion 
+of the project because I really knew almost nothing about making a GUI and the whole idea seemed a bit daunting to 
+me but it's something that would make a great addition to the project.  I decided to write the GUI using Processing since it’s pretty much just C++ code.  It turned out looking great.     
+<br>
+<br>
+Below is a screen shot of the GUI.  There's a still a lot of work to be done but I think I'm off to a good start.
+I've made a few changed to the autonomous car code to accommodate the new GUI.  Here’s how the whole things works now. 
+<br>
+<br>
+After turning the car on it will 
+sit and wait until either a start button on the car is manually pushed or it receives a start character from the 
+laptop over the Xbee radios.  Once the car is running it sends back data at a user defined time interval currently
+set to 100 ms.  A sync character is sent from the car to tell the computer that there’s a new data coming in.  
+On the other end the data gets parsed, stored into its appropriate variable and plotted.  
+I've got it set up to plot the velocity/acceleration calculated from the wheel encoders
+and the distance from the waypoint on one graph.  The lower graph shows the steering angle error or how far the
+steering angle differs from the desired calculated angle.  This will give a good visual for how well the PID gains are set up. 
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span11">
+        <img src="UGV/GUI.png">
+        </div>
+        </div>
+
+
+<br>
+<br> 
+The numbers on the screen are actual test data being sent from the car using the Xbee radios just to check that the data
+parsing is working.  I've also added in some sliders to adjust the PID settings on the car.  The idea being 
+that I could changed the gains based on how the steering error plot is looking.  This would give me a much easier 
+way to tune the PID algorithm as the car is running versus having to stop it and upload the firmware on the board
+for each change.  I also plan on doing the same to control the car's speed.  On the car's code I set up a timer 
+interrupt to go off every 500 ms to check the serial line looking for new settings or watch for a stop command sent from 
+the laptop. Since
+the car will be controlled only by the laptop I'm also planning on adding a radio signal connection/strength monitor.  
+This will act as switch to shut the car off if it goes out of radio contact.  
+
+      
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jason Dorweiler 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position: fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+@media (max-width: 867px) {
+   .sidebar-nav-fixed {
+        position: static;
+        width: 100%;
+       }
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="roomba.html#roomba">ROS with a Roomba</a></li>
+                <li><a href="UGVBoard.html#UGV">UGV Board</a></li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <a name= "roomba"></a>
+        <div class="row-fluid">
+        <div class="span9 span-auto-sidebar">
+          <div class="hero-unit">
+          
+          <a name="electronics"></a>
+		   <h2>3D Printing</h2>
+		   </br>
+The basic idea of a 3D printer is that  material such as plastic or metal can be shaped into a 3D object. It is also called additive manufacturing because of all of the stock material used to produce the final part. This idea is unlike a lathe or typical CNC machine, which takes a larger stock piece of material and cuts down to the final part.</p>
+For my 3D printer, I am using PLA or polylatic acid, a biodegradable polymer that is made from corn starch. The benefits of PLA are that it has a fairly low melting point (around 190<sup>o</sup>C) and does not give off any toxic vapors, unlike other plastics.</p>
+The printer has a frame with a movable bed for the Y axis and an extruder mounted on rails acting as the X axis. The whole X axis is then connected to some lead screws which will raise or lower the extruder, controlling the Z axis. PLA wire is fed into an extruder which heats up the plastic and pushes it out a very small nozzle (0.35mm).</p>
+The motors for the printer are controlled by an arduino mega holding all of the firmware, and an open source RAMPS board which handles all of the power for the stepper motors. For the power source, I hacked up a cheap 500W desktop PC power supply to get a 12V source.</p>
+Building the board was a bit of an adventure in itself.  I&#8217;ve done some soldering before but this board has a lot of SMD components on it which I had never worked with before. The smallest size part is 2.0 × 1.25 mm (0805 sized) which is still large enough to solder by hand. </p>
+This is the RAMPS board with nothing on it.
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+        <a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11191.jpg" target="_blank">
+        <img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11191.jpg">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+And all of the SMD components placed on the board.
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+        <a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11192.jpg" target="_blank">
+        <img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11192.jpg">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+I decided to use solder paste instead of hand soldering each individual component one at a time.  One advantage of doing this is that it&#8217;s much faster and less chances to mess up a connection.  The best part is that once all of the components are placed on the board the final soldering is done using a regular cheap frying pan.  Everything gets soldered at one time and it takes about 1 minuet to do it too!
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+        <a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11198.jpg" target="_blank">
+        <img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11198.jpg">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+Here&#8217;s a picture of the almost-completed board.
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+        <a href="http://jasondorweiler.files.wordpress.com/2012/03/img_20120129_093304.jpg" target="_blank">
+        <img src="http://jasondorweiler.files.wordpress.com/2012/03/img_20120129_093304.jpg">
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+And one of my first tests with the board wired up to a stepper motor that was removed from an old desktop printer.
+<br>
+<br>
+
+        <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span6">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/lZ02tkc_3e8" frameborder="0" allowfullscreen></iframe>
+        </a>
+        </div>
+        </div>
+
+
+<br>
+<br>
+<div class="row">
+           <div class="span6">
+<a name="videos"></a>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/lZ02tkc_3e8" frameborder="0" allowfullscreen></iframe></p>
+</div>
+</div>
+It&#8217;s hard to tell in the video, but the motors are going through the movements to draw out a cube.</p>
+I&#8217;ll skip most of the details on the design and building the frame of the printer and get to the good stuff. Many many hours of calibrating and breaking things and finally&#8230;</p>
+<div class="row">
+           <div class="span6">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/AYD1ho9yqr4" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="span6">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/PLmXR11kF3w" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+The first video above is the first layer of a cube. You can see that it&#8217;s printing onto a shattered glass piece, the result of the Z axis smashing through the print bed.  The second video is a few weeks later.  By then I've got it printing some really nice detailed things.  It's making a new herringbone extruder gear. </p>
+Here&#8217;s the finished printer.<br />
+<a name="pictures"></a>
+<a href="http://jasondorweiler.files.wordpress.com/2012/03/img_20120301_205123.jpg"><img class="alignnone size-medium wp-image-103" title="IMG_20120301_205123" src="http://jasondorweiler.files.wordpress.com/2012/03/img_20120301_205123.jpg?w=600&h=450" alt="" width="600" height="450" /></a></p>
+And a picture of it printing some new extruder gears for itself.<br />
+<a href="http://jasondorweiler.files.wordpress.com/2012/03/img_20120223_223254.jpg"><img class="alignnone size-medium wp-image-104" title="IMG_20120223_223254" src="http://jasondorweiler.files.wordpress.com/2012/03/img_20120223_223254.jpg?w=600&h=450" alt="" width="600" height="450" /></a></p>
+Air-less printed tire I made for another project.<br />
+<div class="row">
+           <div class="span5">
+<a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11185.jpg"><img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11185.jpg?w=512&h=384" alt="" title="" width="512" height="384" class="alignnone size-large wp-image-270" /></a><br />
+</div>
+<div class="span6">
+<a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11190.jpg"><img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11190.jpg?w=512&h=384" alt="" title="" width="512" height="384" class="alignnone size-large wp-image-271" /></a>
+</div>
+</div>
+<br />
+<div class="row">
+           <div class="span5">
+<a href="http://jasondorweiler.files.wordpress.com/2012/03/sdc11181.jpg"><img src="http://jasondorweiler.files.wordpress.com/2012/03/sdc11181.jpg?w=384&h=512" alt="" title="sdc11181" width="384" height="512" class="alignnone size-large wp-image-273" /></a><br />
+</div>
+</div>
+<br>
+My next plan is to design molds for carbon fiber parts on the computer and use the printer to quickly print the molds. This would save tons of time. Making the seat stay mold for the carbon fiber bike project took weeks to do.</p>
+An additional project is design of a laser holder to integrate with the X axis in place of the exturder. The laser holder would change the 3D printer to a laser cutter. A laser cutter could be used to cut wood, acrylic, or even create laser-etched circuit boards.</p>
+
+      <hr>
+</div>
+      <footer>
+        <p>&copy; Jason Dorweiler 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Dorweiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:185px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 220px;
+}
+      
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32005323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Jason Dorweiler</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="mailto:jddorweiler@gmail.com">Contact</a></li>
+              <li><a href="http://github.com/jdorweiler/">GitHub</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+  <div class="row-fluid row">
+    <div class="span3">
+      <div class="well sidebar-nav-fixed">
+            <ul class="nav nav-list">
+              <li class="nav-header">Chemistry Projects</li>
+              <li><a href="chemistry.html#Lanthanide">Lanthanide</a></li>
+              </br>
+              <li class="nav-header">3D Printing</li>
+              <li><a href="printing.html#electronics">Electronics</a></li>
+              <li><a href="printing.html#videos">Videos</a></li>
+              <li><a href="printing.html#pictures">Pictures</a></li>
+              </br>
+                <li class="nav-header">Projects</li>
+                <li><a href="car.html#car">Autonomous Car</a></li>
+              <li><a href="electronics.html#robot">Balancing Robot</a></li>
+              <li><a href="cfbike.html#cfbike">Carbon Fiber Bike Parts</a></li>
+              </br>
+                <li class="nav-header">Climbing</li>
+              <li><a href="climbing.html">Utah</a></li>
+              <li><a href="climbingNJ.html">New Jersey</a></li>
+              </br>
+              <li class="nav-header"><a href="Blog.html">Blog</a></li>
+
+            
+             
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+        <div class="span9 span-fixed-sidebar">
+          <div class="hero-unit">
+            
+          <div class="row-fluid">
+          
+          <a name="utah"></a>
+          </br>
+          </br>
+          
+          <h2>Moab, Utah</h2>
+          Most of my Utah adventures, aside from snowboarding, take place in the small desert town of Moab. My last trip there was in 2011 with Kate. We flew to Salt Lake and spent a few days snowboarding. Then we packed up and made the 4 hour drive to Moab, where it was 80<sup>0</sup>F and sunny.<br />
+<br>
+<img src="climbing/Utah/utah.png">
+ <br>
+ I&#8217;d been to Salt Lake several times, but this was my first trip out to the desert. We had a few of the easier intro-to-desert climbs picked out. 
+ First up was the South Six Shooter Tower, an hour or so south of Moab.  That&#8217;s the tower on the left next to the North Six Shooter.<br />
+<br>
+<br>
+<img src="climbing/Utah/southsix.png" alt="">
+<br>
+<br>
+ It&#8217;s hard judge perspective from this picture, but those towers are huge! The actual climbing is the little tower at the top of the big talus cone. A rough guess is an 800 ft of hike up the talus and then a 150 ft climb. The hike turned out to be the hardest part. 
+ Getting to the towers is just as fun. They are located a few miles off of four wheel drive-only roads. Here&#8217;s the rental car parked at the base of the talus. You&#8217;re not supposed to off-road the rental cars, but why would they rent an AWD car if then didn&#8217;t want me to try it?<br />
+<br>
+<br>
+<img src="climbing/Utah/car.jpg">
+ <br>
+ <br>
+ Even from here, the tower is still way off in the distance. And after a lot of hiking, we made it to the base of the climb, only to find a line of 12 or so people ahead of us. I have no idea where they came from, but they somehow got there before us. 
+ Here&#8217;s Kate, looking not too happy to be in the middle of nowhere waiting in line for a climb. That&#8217;s North Six Shooter in the background.<br />
+<br>
+<br>
+<img src="climbing/Utah/southsix2.png" alt="">
+<br>
+<br>
+ After the South Six Shooter, we decided to do a bit of climbing at Indian Creek. This is a world famous climbing area known for its perfect cracks, some running over 100 ft. Here are a few pictures.<br />
+<br>
+<br>
+<img src="climbing/Utah/ic2.jpg">
+<br>
+<br>
+<img src="climbing/Utah/ic1.jpg">
+<br>
+ Next on our list were a few towers in Arches National Park. Owl Rock is a small free standing tower about 100ft tall right by one of the parking lots in the par. While we were hanging out at the top of the tower, a couple yelled up from the ground and waved at us. They took a few good pictures of us and we shouted to exchange emails.  Thanks to the nice random strangers for these awesome pictures! Here are two pictures of Kate rappelling after we finished the climb.<br />
+<br>
+<br>
+<img src="climbing/Utah/owlrock.jpg">
+<br>
+<br>
+<img src="climbing/Utah/owlrock2.jpg">
+<br>
+ And here is the final tower, Dark Angel, located in Arches National Park. It&#8217;s about a two hour hike from the car, and judging from the rock quality, is probably rarely climbed. 
+ That&#8217;s the Dark Angle tower on the far left.
+ <br>
+ <br>
+<img src="climbing/Utah/darkangle.jpg">
+<br>
+<br>
+ And here we are at the top of the first pitch. We bailed off the top of the first pitch. The rock was really bad, and I even pulled a small chunk off when I climbed. I felt bad since I didn&#8217;t want to do anything to ruin such a beautiful tower for future visitors, so we chose not to finish the climb. 
+ <br>
+ <br>
+ <img src="climbing/Utah/kateda.png">
+ <br>
+ <br>
+ That&#8217;s about it for now. I&#8217;ll finish up with a few of my favorite pictures from the trip. 
+ Taken in Arches. The La Sal mountains in the background.
+<br>
+<br>
+<img src="climbing/Utah/arches1.png">
+<br>
+<br>
+ Here&#8217;s a road leading into Castle Valley. Castleton Tower is on the left and the La Sal mountains on the right.
+ <br>
+<br>
+<img src="climbing/Utah/castelton.png">
+<br>
+ The Fisher Towers (now even more famous from that <a title="Citi Bank commercial" href="http://www.youtube.com/watch?v=VE4bcq8Plzk" target="_blank">Citi Bank commercial</a><br />
+ <img src="climbing/Utah/fishertowers.png">
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+         &copy; Jason Dorweiler 2012 
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
